@@ -68,21 +68,29 @@ main .container .row {
     font-weight: 500;
     color: var(--black-color);
 }
-.container .row .login > a,
+.container .row .login  a,
 .container .row .login button {
     background-color: rgba(255, 255, 255, 0);
-    border-color: #3d97ae;
+    border-color: #00B1AD;
     color: var(--black-color);
     width: 100%;
-    border-width: 4px;
+    border-width: 3px;
     margin-top: 15px;
     padding: 16px;
-    border-radius: 9px;
+    border-radius: 15px;
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 600;
+}
+.btns-container{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 .container .row .login a.half-width {
-    width: 50% ;
+    width: 40% ;
 }
 .container .row .login .form-control {
     /* background-color: var(--main-color); */
