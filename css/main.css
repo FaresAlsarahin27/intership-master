@@ -752,3 +752,189 @@ button[type="submit"]:hover {
 .fa-bell:before {
     content: "\f0f3";
 }
+
+/* start questions  */
+.container.jop-application,
+.container.student-questions {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    min-height: calc(100vh - 85px);
+    margin-top: 100px;
+}
+
+.internship-info-q {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.internship-info-q > text {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+.internship-info-q text > h2 {
+    font-size: 1rem;
+}
+
+.internship-info-q > .image > img {
+    max-width: 100%;
+}
+.student-questions form {
+    display: flex;
+    flex-direction: column;
+}
+.student-questions form > textarea {
+    min-height: 200px;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #ccc;
+    padding: 10px;
+}
+.student-questions form > input {
+    width: 80%;
+    margin: 20px auto;
+    padding-block: 10px;
+    border-radius: 10px;
+    color: #ededed;
+    background-color: rgb(90 200 94);
+    outline: none;
+    border: none;
+    transition: 0.3s;
+}
+.student-questions form > input:hover {
+    transform: scale(1.05);
+}
+@media (max-width: 767px) {
+    .internship-info-q {
+        justify-content: center;
+    }
+    .internship-info-q .image {
+        max-width: 250px;
+        margin-top: 80px;
+    }
+    .internship-info-q .text {
+        margin-top: 30px;
+    }
+}
+
+/* End questions  */
+
+/* Start job applications  */
+.container.jop-application {
+    min-height: calc(100vh - 82px);
+    margin-top: 85px;
+}
+
+.container.jop-application > .com-info .image {
+    width: 400px;
+    margin-bottom: 40px;
+}
+.container.jop-application .com-info .image > img {
+    max-width: 400px;
+}
+.container.jop-application > form {
+    display: flex;
+    flex-direction: column;
+}
+.container.jop-application > form > .buttons > input,
+.container.jop-application > form input[type="text"],
+.container.jop-application > form input[type="email"] {
+    margin-bottom: 20px;
+    padding: 10px 5px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.container.jop-application > form > .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.container.jop-application > form > .buttons > input {
+    flex-basis: 40%;
+    transition: 0.3s;
+    padding: 10px 5px;
+}
+
+.container.jop-application > form > .buttons > input:hover {
+    transform: scale(1.03);
+}
+.apply-file-upload {
+    text-align: center;
+    min-width: 260px;
+    position: relative;
+}
+.apply-file-upload > button {
+    width: 100%;
+}
+.apply-file-upload > span {
+    position: absolute;
+    text-align: start;
+    left: 0;
+    padding: 0 2rem;
+    color: black;
+}
+.apply-file-upload > span:hover {
+    transform: translateX(5px);
+    color: rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+}
+/* end job applications  */
+
+/* start Apply Details  */
+section.jop-details > .container {
+    min-height: calc(100vh - 82px);
+    margin-top: 85px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+section.jop-details .image > img {
+    max-width: 70%;
+    margin-bottom: 20px;
+}
+/* end   Apply Details  */
+/* Start See Msg  */
+section.see-msg > .container {
+    min-height: calc(100vh - 82px);
+    margin-top: 85px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+section.see-msg .boxs-request {
+    max-height: 255px;
+    overflow: hidden;
+}
+
+section.see-msg .boxs-request.active {
+    max-height: 100%;
+    transition: all 1s ease-out;
+}
+
+section.see-msg .box-request {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+section.see-msg .container h1 {
+    font-size: 20px;
+    width: 60%;
+    text-align: start;
+}
+/* end   See Msg  */
