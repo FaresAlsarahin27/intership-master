@@ -15,7 +15,11 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         />
-        <link rel="shortcut icon" href="images/UU-icon.ico" type="image/x-icon">
+        <link
+            rel="shortcut icon"
+            href="images/UU-icon.ico"
+            type="image/x-icon"
+        />
         <link rel="stylesheet" href="css/all.min.css" />
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="./css/main.css" />
@@ -47,35 +51,35 @@
                     class="collapse navbar-collapse"
                     id="navbarSupportedContent"
                 >
-                <div class="pages m-auto">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a
-                                class="nav-link active"
-                                aria-current="page"
-                                href="#dashBoard"
-                                >Dashboard</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#applyForJob"
-                                >OpenJobs</a
-                            >
-                        </li>
-                    </ul>
-                </div>
+                    <div class="pages m-auto">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#dashBoard"
+                                    >Dashboard</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#applyForJob"
+                                    >OpenJobs</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" id="envelope"
                                 ><i class="fa-solid fa-envelope"></i
                             ></a>
                             <div class="msgs">
-                                <a href="#"
+                                <a href="new-msg.html"
                                     ><span class="msg" id="sendMessage"
                                         >Send Message</span
                                     ></a
                                 >
-                                <a href="#"
+                                <a href="see-msg.html"
                                     ><span class="msg" id="seeMessage"
                                         >See Message</span
                                     ></a
@@ -122,116 +126,184 @@
         </div>
 
         <main>
-            <section  id="dashBoard">
+            <section id="dashBoard">
                 <div class="dashboard">
                     <div class="container">
-                      <div class="box">
-                        <div class="box-title">
-                          <a href="stats.html"> Internship 1</a>
-                          <a href="stats.html"><i class="fa-solid fa-right-long"></i></a>
-                        </div>
-                        <div class="year">
-                            <span class="inbox">Year: 2023/2024</span>
-                        </div>
-                        <div class="company">
-                            <span class="inbox">company: Mr. Robot Electronics</span>
-                        </div>
-                        <div class="job-title">
-                            <span class="inbox">Job-Title: Frontend Developer</span>
-                        </div>
-                        <div class="duration">
-                            <span class="inbox">Duration: 3 months</span>
-                        </div>
-                        <div class="status">
-                            <span class="inbox">Status: Done</span>
-                        </div>
-                      </div>
-                      <div class="box">
-                        <div class="box-title">
-                          <a href="#"> Internship 2</a>
-                          <a href="#"><i class="fa-solid fa-right-long"></i></a>
-                        </div>
-                        <div class="year">
-                            <span class="inbox">Year: 2023/2024</span>
-                        </div>
-                        <div class="company">
-                            <span class="inbox">Company: Pablo Escobar Solutions</span>
+                        <div class="box">
+                            <div class="box-title">
+                                <a href="stats.html" target="_blank">
+                                    Internship 1</a
+                                >
+                                <a href="stats.html" target="_blank"
+                                    ><i class="fa-solid fa-right-long"></i
+                                ></a>
                             </div>
-                        <div class="job-title">
-                            <span class="inbox">Job Title: Cyber Security Speciality</span>
+                            <div class="year">
+                                <span class="inbox">Year: 2023/2024</span>
+                            </div>
+                            <div class="company">
+                                <span class="inbox"
+                                    >company: Mr. Robot Electronics</span
+                                >
+                            </div>
+                            <div class="job-title">
+                                <span class="inbox"
+                                    >Job-Title: Frontend Developer</span
+                                >
+                            </div>
+                            <div class="duration">
+                                <span class="inbox">Duration: 3 months</span>
+                            </div>
+                            <div class="status">
+                                <span class="inbox">Status: Done</span>
+                            </div>
                         </div>
-                        <div class="duration">
-
-                            <span class="inbox">Duration: Cyber Security Speciality</span>
+                        <div class="box">
+                            <div class="box-title">
+                                <a href="#"> Internship 2</a>
+                                <a href="#"
+                                    ><i class="fa-solid fa-right-long"></i
+                                ></a>
+                            </div>
+                            <div class="year">
+                                <span class="inbox">Year: 2023/2024</span>
+                            </div>
+                            <div class="company">
+                                <span class="inbox"
+                                    >Company: Pablo Escobar Solutions</span
+                                >
+                            </div>
+                            <div class="job-title">
+                                <span class="inbox"
+                                    >Job Title: Cyber Security Speciality</span
+                                >
+                            </div>
+                            <div class="duration">
+                                <span class="inbox"
+                                    >Duration: Cyber Security Speciality</span
+                                >
+                            </div>
+                            <div class="status">
+                                <span class="inbox"
+                                    >Status: Pending Approval</span
+                                >
+                            </div>
                         </div>
-                        <div class="status">
-                            <span class="inbox">Status: Pending Approval</span>
+                        <div class="box">
+                            <div class="box-title">
+                                <a href="instructor.html">
+                                    Voluntary Internship</a
+                                >
+                                <a href="#"
+                                    ><i class="fa-solid fa-right-long"></i
+                                ></a>
+                            </div>
+                            <div class="year">
+                                <span class="inbox">Year: 2024/2025</span>
+                            </div>
+                            <div class="company">
+                                <span class="inbox">Company: Undetermined</span>
+                            </div>
+                            <div class="job-title">
+                                <span class="inbox"
+                                    >Job-Title:Undetermined</span
+                                >
+                            </div>
+                            <div class="duration">
+                                <span class="inbox"
+                                    >Duration: Undetermined</span
+                                >
+                            </div>
+                            <div class="status">
+                                <span class="inbox">Status: Undetermined</span>
+                            </div>
                         </div>
-                      </div>
-                      <div class="box">
-                        <div class="box-title">
-                          <a href="instructor.html"> Voluntary Internship</a>
-                        <a href="#"><i class="fa-solid fa-right-long"></i></a>
-                        </div>
-                        <div class="year">
-                            <span class="inbox">Year: 2024/2025</span>
-                            </div>
-                        <div class="company">
-                            <span class="inbox">Company: Undetermined</span>
-                            </div>
-                        <div class="job-title">
-                            <span class="inbox">Job-Title:Undetermined</span>
-                            </div>
-                        <div class="duration">
-                            <span class="inbox">Duration: Undetermined</span>
-                            </div>
-                        <div class="status">
-                            <span class="inbox">Status: Undetermined</span>
-                            </div>
-                      </div>
-                      
                     </div>
-                  </div>
+                </div>
             </section>
-            <section class="applyforjob"  id="applyForJob">
+            <section class="applyforjob" id="applyForJob">
                 <div class="container text-center">
                     <div class="row">
                         <div class="col-12">
                             <h1>Apply for a job now!</h1>
                             <div class="boxs-request" id="boxsRequest">
-                            <div class="box-request">
-                                <h2>Student "Mahmoud Abdelkerim" has sent their internship form.</h2>
-                                <a class="btn" href="#">Apply now!</a>
-                                <a class="btn" href="#">Details</a>
-                            </div>
-                            <div class="box-request">
-                                <h2>Student "Mahmoud Abdelkerim" has sent their internship form.</h2>
-                                <a class="btn" href="#">Apply now! </a>
-                                <a class="btn" href="#">Details</a>
-                            </div>
-                            <div class="box-request">
-                                <h2>Student "Mahmoud Abdelkerim" has sent their internship form.</h2>
-                                <a class="btn" href="#">Apply now! </a>
-                                <a class="btn" href="#">Details </a>
-                            </div>
-                            <div class="box-request">
-                                <h2>Student "Mahmoud Abdelkerim" has sent their internship form.</h2>
-                                <a class="btn" href="#">Apply now! </a>
-                                <a class="btn" href="#">Details </a>
-                            </div>
-                            <div class="box-request">
-                                <h2>Student "Mahmoud Abdelkerim" has sent their internship form.</h2>
-                                <a class="btn" href="#">Apply now! </a>
-                                <a class="btn" href="#">Details </a>
-                            </div>
-                            <div class="box-request">
-                                <h2>Student "Mahmoud Abdelkerim" has sent their internship form.</h2>
-                                <a class="btn" href="#">Apply now! </a>
-                                <a class="btn" href="#">Details </a>
+                                <div class="box-request">
+                                    <h2>
+                                        Student "Mahmoud Abdelkerim" has sent
+                                        their internship form.
+                                    </h2>
+                                    <a class="btn" href="apply-now.html"
+                                        >Apply now!</a
+                                    >
+                                    <a class="btn" href="details.html"
+                                        >Details</a
+                                    >
+                                </div>
+                                <div class="box-request">
+                                    <h2>
+                                        Student "Mahmoud Abdelkerim" has sent
+                                        their internship form.
+                                    </h2>
+                                    <a class="btn" href="apply-now.html"
+                                        >Apply now!
+                                    </a>
+                                    <a class="btn" href="details.html"
+                                        >Details</a
+                                    >
+                                </div>
+                                <div class="box-request">
+                                    <h2>
+                                        Student "Mahmoud Abdelkerim" has sent
+                                        their internship form.
+                                    </h2>
+                                    <a class="btn" href="apply-now.html"
+                                        >Apply now!
+                                    </a>
+                                    <a class="btn" href="details.html"
+                                        >Details
+                                    </a>
+                                </div>
+                                <div class="box-request">
+                                    <h2>
+                                        Student "Mahmoud Abdelkerim" has sent
+                                        their internship form.
+                                    </h2>
+                                    <a class="btn" href="apply-now.html"
+                                        >Apply now!
+                                    </a>
+                                    <a class="btn" href="details.html"
+                                        >Details
+                                    </a>
+                                </div>
+                                <div class="box-request">
+                                    <h2>
+                                        Student "Mahmoud Abdelkerim" has sent
+                                        their internship form.
+                                    </h2>
+                                    <a class="btn" href="apply-now.html"
+                                        >Apply now!
+                                    </a>
+                                    <a class="btn" href="details.html"
+                                        >Details
+                                    </a>
+                                </div>
+                                <div class="box-request">
+                                    <h2>
+                                        Student "Mahmoud Abdelkerim" has sent
+                                        their internship form.
+                                    </h2>
+                                    <a class="btn" href="apply-now.html"
+                                        >Apply now!
+                                    </a>
+                                    <a class="btn" href="details.html"
+                                        >Details
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                        <a class="btn sub" id="seeAll">See All Form Submissions</a>
+                        <a class="btn sub" id="seeAll"
+                            >See All Form Submissions</a
+                        >
                     </div>
                 </div>
             </section>
