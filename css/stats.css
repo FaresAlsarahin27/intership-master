@@ -11,12 +11,16 @@
   }
   body {
     font-family: "Cairo", sans-serif;
-    background: #dedede;
-    /* background: linear-gradient(90deg, rgba(48,100,101,1) 0%, rgba(34,34,34,1) 100%); */
+    background: rgb(240, 230, 235);
+    background: linear-gradient(
+        311deg,
+        rgba(231, 220, 225, 0.393) 37%,
+        rgba(197, 228, 234, 0.353) 64%
+    );
   }
   
   .container {
-    padding-top: 150px;
+    padding-top: 80px;
   }
 
   h1{
@@ -35,7 +39,6 @@
     cursor: pointer;
     font-family: Arial;
     font-size: 15px;
-    font-weight: bold;
     padding: 10px;
     text-decoration: none;
     min-width: 150px;
@@ -51,8 +54,8 @@
     border-bottom-right-radius: 10px;
   }
   .intern-btn:not(:last-child):not(:first-child){
-    border-right: 2px solid rgba(0, 0, 0, 0.479);
-    border-left: 2px solid rgba(0, 0, 0, 0.432);
+    border-right: 2px solid rgba(0, 0, 0, 0.397);
+    border-left: 2px solid rgba(0, 0, 0, 0.397);
   }
   .intern-btn.active {
     position: relative;

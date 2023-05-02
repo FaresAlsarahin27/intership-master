@@ -13,9 +13,9 @@ body {
     font-family: "Cairo", sans-serif;
     background: rgb(240, 230, 235);
     background: linear-gradient(
-        332deg,
-        rgb(231 220 225) 37%,
-        rgb(197 228 234) 64%
+        311deg,
+        rgba(231, 220, 225, 0.393) 37%,
+        rgba(197, 228, 234, 0.353) 64%
     );
 }
 
