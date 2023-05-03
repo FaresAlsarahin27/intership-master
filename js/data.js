@@ -41,9 +41,24 @@ function updateContent(jsonUrl) {
     });
 }
 
+/*****************/
+
+/*****************/
 // Define the current JSON file path and get the corresponding link element
-let currentJson2 = '../data/internship.json';
+let currentJson2 = "../data/internship.json";
 let currentLink = document.getElementById('button1');
+const links = document.querySelectorAll(".internshipLink");
+//First data based on clicked link
+links.forEach(link => {
+  link.addEventListener('click', function() {
+    const jsonUrl = this.getAttribute('data-json');
+    updateContent(jsonUrl);
+  });
+}); // not done Yet
+
+/*****************/
+
+/*****************/
 
 // Listen for keydown events on the document object
 window.addEventListener('keydown', function(event) {
@@ -54,6 +69,13 @@ window.addEventListener('keydown', function(event) {
     // Get the link element that corresponds to the new JSON file path
     let newLink = document.querySelector(`[data-json="${newJson}"]`);
     // Remove the "active" class from the current link and add it to the new link
+    internBtns.forEach(link => {
+      if (link === this) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
     currentLink.classList.remove('active');
     newLink.classList.add('active');
     // Update the current JSON file path and link element
@@ -66,25 +88,32 @@ window.addEventListener('keydown', function(event) {
 
 // Call the updateContent() function with the URL of the first JSON file
 updateContent(currentJson2);
+/************/
 
 /************/
 
+/************/
+// Add a click event listener to all links with the class "intern-btn"
+const internBtns = document.querySelectorAll(".intern-btn");
 
-// // Call the updateContent() function with the URL of the first JSON file
-// updateContent('../data/internship.json');
-// // Add an event listener to a button that switches between JSON files and updates the HTML content
-// const mybutton = document.getElementById('switch-button');
-// mybutton.addEventListener('click', function() {
-//   // Check the current JSON file path and switch to the other file
-//   const currentJson = mybutton.dataset.json;
-//   const newJson = (currentJson === '../data/internship.json') ? '../data/InternshipTwo.json' : (currentJson === '../data/InternshipTwo.json') ? '../data/InternshipThree.json' : '../data/internship.json';
-//   // Update the button data attribute with the new JSON file path
-//   mybutton.dataset.json = newJson;
-//   // Call the updateContent() function with the new JSON file path
-//   updateContent(newJson);
-// });
+// Loop through each link and add an event listener
+internBtns.forEach(link => {
+  link.addEventListener('click', function() {
+    // Get the data-json attribute value of the clicked link
+    const jsonUrl = this.getAttribute('data-json');
+    // Call the updateContent() function with the JSON file URL as a parameter
+    updateContent(jsonUrl);
 
+    // Add the "active" class to the clicked link and remove it from all other links
+    internBtns.forEach(link => {
+      if (link === this) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  });
+});
 
-
-
+/************/
 // .catch(error => console.error(error));

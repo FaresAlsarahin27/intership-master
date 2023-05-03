@@ -195,7 +195,11 @@ h1 {
   .container .info .status {
     border-radius: 0;
   }
-  .btn {
-    justify-content: space-around;
+  .btns,.btns-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
   }
 }
