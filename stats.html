@@ -20,10 +20,18 @@
         <link rel="stylesheet" href="./css/stats.css" />
         <title>Application Process</title>
     </head>
-    <body>
+    <body style="position: relative;">
 
         <main>
             <div class="container text-center">
+              <div class="card">
+                <div class="card-header">
+                  Hint <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <div class="card-body">
+                  <p>Press <code>Spacebar</code> to change between internships.</p>
+                </div>
+              </div>
                 <div class="row">
                     <div class="col-12">
                         <div class="app">
@@ -31,32 +39,32 @@
                         </div>
                         <div class="intern-btns">
                             <div class="btns-top text">
-                                <a class="intern-btn active">Internship 1</a>
-                                <a class="intern-btn">Internship 2</a>
-                                <a class="intern-btn">Internship 3</a>
+                                <a class="intern-btn active" id="button1" data-json="../data/internship.json">Internship 1</a>
+                                <a class="intern-btn"        id="button2" data-json="../data/InternshipTwo.json">Internship 2</a>
+                                <a class="intern-btn"        id="button3" data-json="../data/InternshipThree.json">Internship 3</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 boxs">
-                        <div class="box">
+                        <div class="box" id="yearApp" style="order: 4;">
                             <h2>Year</h2>
-                            <p>2022/2023</p>
+                            <p></p>
                         </div>
-                        <div class="box">
+                        <div class="box" id="companyApp" style="order: 2;">
                             <h2>Company</h2>
-                            <p>Mr.Robot Electronics</p>
+                            <p></p>
                         </div>
-                        <div class="box">
+                        <div class="box" id="statusApp" style="order: 5;">
                             <h2>Status</h2>
-                            <p>Waiting for form</p>
+                            <p></p>
                         </div>
-                        <div class="box">
+                        <div class="box" id="durationApp" style="order: 3;">
                             <h2>Duration</h2>
-                            <p>3 Months</p>
+                            <p></p>
                         </div>
-                        <div class="box">
+                        <div class="box" id="JobTitleApp">
                             <h2>Job title</h2>
-                            <p>Front End Developer</p>
+                            <p></p>
                         </div>
                 </div>
             </div>
@@ -76,6 +84,7 @@
             integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
             crossorigin="anonymous"
         ></script>
-        <script src="./js/index.js"></script>
+        <!-- <script src="./js/active.js"></script> -->
+        <script src="./js/data.js"></script>
     </body>
 </html>
