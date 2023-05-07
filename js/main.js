@@ -92,3 +92,5 @@ function openModal(){
 function closeModal(){
     modal.classList.remove('open');
 }
+
+console.log('just trying');
