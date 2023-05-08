@@ -22,21 +22,7 @@ const firebaseConfig = {
   
   // init services
   const db = getFirestore();
+  const auth = getAuth()
   
   // collection refs
   const colRef = collection(db, 'users');
-  
-  // fetch from database
-  getDocs(colRef)
-    .then((snapshot) => {
-      let names = []
-      snapshot.docs.forEach((doc) => {
-        names.push({ ...doc.data(), id: doc.id })
-      })
-      console.log(names)
-    })
-    .catch(err => {
-      console.log(err.message)
-    })
-  
-    console.log('wtf')
