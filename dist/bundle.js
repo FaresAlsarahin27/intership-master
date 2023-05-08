@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./js/index.js":
-/*!*********************!*\
-  !*** ./js/index.js ***!
-  \*********************/
+/***/ "./js/services.js":
+/*!************************!*\
+  !*** ./js/services.js ***!
+  \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! firebase/app */ \"./node_modules/firebase/app/dist/esm/index.esm.js\");\n/* harmony import */ var firebase_firestore__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase/firestore */ \"./node_modules/firebase/firestore/dist/esm/index.esm.js\");\n// import firebase libraries\r\n\r\n\r\n\r\n// Example starter JavaScript for disabling form submissions if there are invalid fields\r\n(() => {\r\n  \"use strict\";\r\n\r\n  // Fetch all the forms we want to apply custom Bootstrap validation styles to\r\n  const forms = document.querySelectorAll(\".needs-validation\");\r\n\r\n  // Loop over them and prevent submission\r\n  Array.from(forms).forEach((form) => {\r\n    form.addEventListener(\r\n      \"submit\",\r\n      (event) => {\r\n        if (!form.checkValidity()) {\r\n          event.preventDefault();\r\n          event.stopPropagation();\r\n        }\r\n        form.classList.add(\"was-validated\");\r\n      },\r\n      false\r\n    );\r\n  });\r\n})();\r\n\r\n// Overlay\r\n\r\nTweenMax.to(\".overlay\", 2, {\r\n  delay: 1,\r\n  top: \"-100%\",\r\n  ease: Expo.easeInOut,\r\n});\r\n\r\nTweenMax.to(\".overlay span\", 2, {\r\n  delay: 0.3,\r\n  opacity: 0,\r\n  y: -60,\r\n  ease: Expo.easeInOut,\r\n});\r\n\r\nTweenMax.to(\".overlay h1\", 2, {\r\n  opacity: 0,\r\n  y: -60,\r\n  ease: Expo.easeInOut,\r\n});\r\n\r\n/*****/\r\nTweenMax.from(\".login\", 1, {\r\n  delay: 3,\r\n  opacity: 0,\r\n  y: -100,\r\n  ease: Expo.easeInOut,\r\n});\r\nTweenMax.from(\".login-form\", 1, {\r\n  delay: 3,\r\n  opacity: 0,\r\n  y: 200,\r\n  ease: Expo.easeInOut,\r\n});\r\n\r\n// setup connection to firebase\r\nconst firebaseConfig = {\r\n  apiKey: \"AIzaSyCvix8gWSjyc5qZvdwAiz4fNlkgUclPy1s\",\r\n  authDomain: \"internship-automation-process.firebaseapp.com\",\r\n  projectId: \"internship-automation-process\",\r\n  storageBucket: \"internship-automation-process.appspot.com\",\r\n  messagingSenderId: \"884525502818\",\r\n  appId: \"1:884525502818:web:199d2dbb5c1fd87c101c3b\"\r\n}\r\n// init firebase\r\n;(0,firebase_app__WEBPACK_IMPORTED_MODULE_0__.initializeApp)(firebaseConfig);\r\n// init services\r\nconst db = (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_1__.getFirestore)();\r\n// collection refs\r\nconst colRef = (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_1__.collection)(db, 'users');\r\n// fetch from database\r\n(0,firebase_firestore__WEBPACK_IMPORTED_MODULE_1__.getDocs)(colRef)\r\n  .then((snapshot) => {\r\n    let names = []\r\n    snapshot.docs.forEach((doc) => {\r\n      names.push({ ...doc.data(), id: doc.id })\r\n    })\r\n    console.log(names)\r\n  })\r\n  .catch(err => {\r\n    console.log(err.message)\r\n  })\r\n\r\nconsole.log('hello?');\r\n\r\n\n\n//# sourceURL=webpack://ipa/./js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! firebase/app */ \"./node_modules/firebase/app/dist/esm/index.esm.js\");\n/* harmony import */ var firebase_firestore__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase/firestore */ \"./node_modules/firebase/firestore/dist/esm/index.esm.js\");\n// import firebase libraries\r\n\r\n\r\n\r\n\r\n// setup connection to firebase\r\nconst firebaseConfig = {\r\n    apiKey: \"AIzaSyCvix8gWSjyc5qZvdwAiz4fNlkgUclPy1s\",\r\n    authDomain: \"internship-automation-process.firebaseapp.com\",\r\n    projectId: \"internship-automation-process\",\r\n    storageBucket: \"internship-automation-process.appspot.com\",\r\n    messagingSenderId: \"884525502818\",\r\n    appId: \"1:884525502818:web:199d2dbb5c1fd87c101c3b\"\r\n  };\r\n  \r\n  // init firebase\r\n  (0,firebase_app__WEBPACK_IMPORTED_MODULE_0__.initializeApp)(firebaseConfig);\r\n  \r\n  // init services\r\n  const db = (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_1__.getFirestore)();\r\n  \r\n  // collection refs\r\n  const colRef = (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_1__.collection)(db, 'users');\r\n  \r\n  // fetch from database\r\n  (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_1__.getDocs)(colRef)\r\n    .then((snapshot) => {\r\n      let names = []\r\n      snapshot.docs.forEach((doc) => {\r\n        names.push({ ...doc.data(), id: doc.id })\r\n      })\r\n      console.log(names)\r\n    })\r\n    .catch(err => {\r\n      console.log(err.message)\r\n    })\r\n  \r\n    console.log('wtf')\n\n//# sourceURL=webpack://ipa/./js/services.js?");
 
 /***/ }),
 
@@ -192,7 +192,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./js/index.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./js/services.js");
 /******/ 	
 /******/ })()
 ;
