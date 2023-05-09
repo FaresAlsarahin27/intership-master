@@ -44,15 +44,30 @@ envelope.addEventListener("click", () => {
 
 const seeAll = document.getElementById("seeAll");
 const boxsRequest = document.getElementById("boxsRequest");
+
 seeAll.addEventListener("click", () => {
-    boxsRequest.classList.toggle("active");
-});    
+  boxsRequest.classList.toggle("active");
+  
+  if (boxsRequest.classList.contains("active")) {
+    seeAll.innerHTML = "Hide Form Submissions";
+  } else {
+    seeAll.innerHTML = "See All Form Submissions";
+  }
+});
 
 const seeAll2 = document.getElementById("seeAll2");
 const boxsRequest2 = document.getElementById("boxsRequest2");
+
 seeAll2.addEventListener("click", () => {
-    boxsRequest2.classList.toggle("active");
+  boxsRequest2.classList.toggle("active");
+  
+  if (boxsRequest2.classList.contains("active")) {
+    seeAll2.innerHTML = "Hide Form Submissions";
+  } else {
+    seeAll2.innerHTML = "See All Form Submissions";
+  }
 });
+
 
 /***********/ 
 const buttons = document.querySelectorAll('button');
