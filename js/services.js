@@ -11,7 +11,8 @@ const auth = getAuth();
 const usersCollection = collection(db, "users");
 
 // logging in
-if (window.location.pathname === '/intership-master/index.html') { // don't run this code if not on index.html
+if (window.location.pathname === '/intership-master/index.html' // don't run this code if not on index.html
+|| window.location.pathname === '/intership-master') { // for github
 
 const loginForm = document.querySelector(".login-form");
 loginForm.addEventListener("submit", (e) => {
@@ -63,6 +64,7 @@ loginForm.addEventListener("submit", (e) => {
 // functions for the pages that have the user navbar
 if (window.location.pathname !== '/intership-master/incoming-message.html'
 && window.location.pathname !== '/intership-master/index.html'
+&& window.location.pathname === '/intership-master' // for github
 && window.location.pathname !== '/intership-master/stats.html') {
 
 // sign out
