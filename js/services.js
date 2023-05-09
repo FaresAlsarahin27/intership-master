@@ -3,8 +3,6 @@ import firebaseConfig from "./firebaseConfig";
 import { getFirestore, collection, getDocs, query, where } from "firebase/firestore";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
-console.log(window.location.pathname);
-console.log("wtf");
 
 // init services
 const db = getFirestore();
