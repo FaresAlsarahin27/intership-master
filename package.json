@@ -2,7 +2,7 @@
   "name": "ipa",
   "version": "1.0.0",
   "description": "view: https://faresalsarahin27.github.io/intership-master/",
-  "main": "services.js",
+  "main": "./js/services.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
