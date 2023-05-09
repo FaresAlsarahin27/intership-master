@@ -35,13 +35,13 @@
                         <h1>Üsküdar Student Login</h1>
                         <form class="login-form needs-validation" novalidate>
                             <div class="mb-3">
-                            <input type="email" class="form-control" id="studentID" aria-describedby="Student ID" placeholder="Student ID" required>
+                            <input type="email" name="email" class="form-control" id="studentID" aria-describedby="Student ID" placeholder="Student Email" required>
                             <div class="invalid-feedback">
                                 Enter a valid Email
                                 </div>
                             </div>
                             <div class="mb-3">
-                            <input type="password" class="form-control" id="Password" placeholder="Password" required>
+                            <input type="password" name="password" class="form-control" id="Password" placeholder="Password" required>
                             <div class="invalid-feedback">
                                 Enter a valid password
                                 </div>
@@ -60,7 +60,7 @@
             integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
             crossorigin="anonymous"
         ></script>
-        <script src="bundle.js"></script>
+        <script src="dist/bundle.js"></script>
         <script src="js/index.js"></script>
     </body>
 </html>
