@@ -13,7 +13,7 @@ const usersCollection = collection(db, "users");
 
 // logging in
 if (window.location.pathname === '/intership-master/index.html' // don't run this code if not on index.html
-|| window.location.pathname === '/intership-master/') { 
+|| window.location.pathname === '/intership-master/') { // for github
 
 const loginForm = document.querySelector(".login-form");
 loginForm.addEventListener("submit", (e) => {
