@@ -8,6 +8,12 @@ body,
 input,
 textarea {
     font-family: "Poppins", sans-serif;
+    background: rgb(240, 230, 235);
+    background: linear-gradient(
+        311deg,
+        rgba(231, 220, 225, 0.393) 37%,
+        rgba(197, 228, 234, 0.353) 64%
+    );
 }
 
 main {
@@ -23,8 +29,8 @@ main {
     /* height: 500px; */
     min-height: 100vh;
     padding: 2rem;
-    background-color: #fafafa;
-    overflow: hidden;
+    /* background-color: #fafafa; */
+    /* overflow: hidden; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,11 +41,11 @@ main {
     width: 100%;
     max-width: 1000px;
     height: 300px;
-    background-color: #ededed;
+    /* background-color: #ededed;
     border-radius: 10px;
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1); */
     z-index: 1000;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
