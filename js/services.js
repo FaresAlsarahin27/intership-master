@@ -45,6 +45,7 @@ loginForm.addEventListener("submit", (e) => {
 
           if (userType == "student") { window.location.pathname = "/intership-master/main.html"; }
           else if (userType == "coordinator") { window.location.pathname = "/intership-master/Coordinator.html"; }
+          else if (userType == "admin") { window.location.pathname = "/intership-master/admin.html"; }
           else { window.location.pathname = "/intership-master/Career-Center.html"; }
 
         } else {
